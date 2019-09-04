@@ -8,6 +8,9 @@
     <!-- bootstrap link  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- 2nd stylesheet for customization-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Crystal Collector!</title>
 </head>
 
@@ -15,19 +18,19 @@
     <div class="container">
         <!-- center the name of the game  -->
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <h1>Crystal Collector</h1>
 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
             </div>
         </div>
         <br>
         <!-- start the next row w/ instructions on the left for the game  -->
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-7 border">
                 <p>You will be given a random number at the start of the game.</p>
                 <p>There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your
                     total score.</p>
@@ -37,32 +40,48 @@
                 <p>You won't know the value of each crystal unless you click on it..</p>
                 <p>Be careful, the values of the crystals will reset and change each game!</p>
             </div>
-            <!-- <div> -->
-                <img class="col-md-4" src="assets/images/GemPhoto.jpg" alt="Image of Gems">
-            <!-- </div> -->
-            <!-- position to the left of wins/losses  -->
-            <div class="col-md-9">
-                <div>
-                    <h2>The number to hit is:</h2>
-                </div>
-                <!-- position to the right of the number to hit  -->
-                <div>
-                    <h3>Wins: </h3>
-                    <h3>Losses: </h3>
-                </div>
-
-                <!-- this is where the 4 diamonds will go  -->
-                <div>
-
-                </div>
-                <!-- this is where the total score will go..  -->
-                <div>
-                    <h2>Your total score is: </h2>
-                </div>
+            <div class="col-md-2">
+                <img id="GemPhoto" src="assets/images/GemPhoto.jpg" alt="Image of Gems">
             </div>
         </div>
 
+
+
+        <!-- position to the left of wins/losses  -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <h2>The number to hit is: <span id="targetNumber"></span></h2>
+                </div>
+                <!-- this is where the total score will go..  -->
+                <div>
+                    <h2>Your total score is: <span id="currentScore"></span></h2>
+                </div>
+            </div>
+            <!-- position to the right of the number to hit  -->
+            <div class="col-md-6">
+                <div>
+                    <h3>Wins: <span id="wins"></span></h3>
+                    <h3>Losses: <span id="losses"></span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- this is where the 4 diamonds will go  -->
+            <div class="col-md-12">
+                <img class="col-md-3 GemPhoto4" id="gem1" src="assets/images/diamond.jpeg" alt="Diamond">
+                <img class="col-md-3 GemPhoto4" id="gem2" src="assets/images/emerald.jpeg" alt="Emerald">
+                <img class="col-md-3 GemPhoto4" id="gem3" src="assets/images/pinkRuby.jpeg" alt="Pink Ruby">
+                <img class="col-md-3 GemPhoto4" id="gem4" src="assets/images/redRuby.jpeg" alt="Red Ruby">
+            </div>
+        </div>
     </div>
+
+    <!--link to jQuery Library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- link to js sheet  -->
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
