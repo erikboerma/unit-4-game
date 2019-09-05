@@ -7,3 +7,12 @@
     width: 200px;
     height: 135px;
 }
+
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: white;
+    margin: 5%;
+}
