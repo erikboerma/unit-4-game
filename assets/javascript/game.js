@@ -49,7 +49,7 @@ $(".GemPhoto4").on("click", function () {
     if (currentScore === targetNumber) {
         wins++;
         $('#wins').text(wins);
-        currentScore = 0;    
+        currentScore = 0;
         $('#currentScore').text(currentScore);
         StartGame();
     }
